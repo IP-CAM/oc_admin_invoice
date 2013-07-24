@@ -1,0 +1,15 @@
+<modification>
+	<id><![CDATA[Email Invoice To Admin]]></id>
+	<version><![CDATA[1.0]]></version>
+	<vqmver><![CDATA[2.3.2]]></vqmver>
+	<author><![CDATA[David - http://boopis.com]]></author>
+	<file name="catalog/model/checkout/order.php">
+		<operation>
+			<search position="before"><![CDATA[if ($this->config->get('config_alert_mail')) {]]></search>
+			<add><![CDATA[		$mail->setTo($this->config->get('config_email'));
+         	$mail->send();
+         	$mail->setTo($this->config->get('config_alert_emails'));
+         	$mail->send();]]></add>
+		</operation>
+	</file>
+</modification>
