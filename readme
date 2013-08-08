@@ -1,0 +1,15 @@
+version 1.0
+
+Tested on OC 1.5.4, 1.5.5 & 1.5.5.1
+
+May or may not work on previous versions
+
+By Default, Opencart sends an invoice to the customer after a purchase is made and provides the option of having a "notification" sent to the admin on file along with additional emails that are inserted in the settings page.
+
+This mod sends the invoice to the admin along with all other emails that are inserted into the additional email notification section of the settings page.
+
+Make sure that no email is inserted in the mail parameter section of settings/mail in the admin section if "mail protocal: mail" has been selected or you will receive duplicate emails.
+
+Also, deselect New Order Alert Mail if you do not wish to have the original alert mail sent to you.
+
+Download here: https://github.com/dchun/oc_admin_invoice
